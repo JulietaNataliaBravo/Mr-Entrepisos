@@ -9,17 +9,28 @@
     src: url("../fonts/Oswald.ttf");
 }
 
-@media screen and (min-width: 320px) {
-    body {
-        font-family: "Oswald", sans-serif;
-        margin: 0;
-        padding: 0;
-    }
+body {
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-    header,
-    footer {
-        background-color: rgb(238, 212, 193);
-    }
+header,
+footer {
+    background-color: rgb(238, 212, 193);
+}
+
+ul a {
+    text-decoration: none;
+    color: rgb(69, 33, 16);
+}
+
+.atxtBtnVerTrabajo{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+@media screen and (min-width: 320px) {
 
     /* H'S */
 
@@ -87,11 +98,6 @@
         align-items: center;
     }
 
-    a {
-        text-decoration: none;
-        color: rgb(69, 33, 16);
-    }
-
     .f2 {
         grid-row: 2/2;
     }
@@ -127,11 +133,13 @@
         padding-right: 5px;
         width: 300px;
         margin: auto;
+
     }
 
     .calltoaction a {
         font-size: 30px;
         color: aliceblue;
+        text-decoration: none;
     }
 
     /* RESEÑAS */
@@ -206,7 +214,7 @@
         padding-top: 10%;
     }
 
-    .subTitTR {
+    .subtitulo {
         font-size: 20px;
         padding-right: 10%;
         padding-left: 10%;
@@ -214,7 +222,7 @@
         margin: 0;
     }
 
-    .trt {
+    .titulo {
         margin: 0;
         padding: 10%;
 
@@ -372,11 +380,11 @@
     /* RESEÑAS */
 
     /* TRABAJOS REALIZADOS */
-    .subTitTR {
+    .subtitulo {
         font-size: 25px;
     }
 
-    .trt {
+    .titulo {
         justify-content: center;
     }
 
@@ -454,7 +462,7 @@
     /* INDEX */
 
     /* TRABAJOS REALIZADOS */
-    .subTitTR {
+    .subtitulo {
         font-size: 30px;
         padding-bottom: 0;
     }
@@ -578,13 +586,21 @@
         padding-left: 20px;
     }
 
-    ul,
     ul li {
-        padding: 3px;
         font-size: 180%;
         margin: 0;
-        padding-right: 40px;
-        padding-bottom: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    ul li a {
+        padding: 20px;
+    }
+
+    ul li a:hover {
+        background-color: rgb(227, 172, 132);
+        transform: skewX(1) skewY(1);
+        border-radius: 20px;
     }
 
     .header__secciones {
@@ -594,6 +610,15 @@
 
     .calltoaction {
         width: 600px;
+    }
+
+    .calltoaction:hover {
+        background-color: rgb(219, 152, 104);
+    }
+
+    .calltoaction a:hover {
+        background-color: rgb(219, 152, 104);
+        font-style: color rgb(69, 33, 16);
     }
 
     /* RESEÑAS */
@@ -620,7 +645,7 @@
     }
 
     /* TRABAJOS REALIZADOS */
-    .subTitTR {
+    .subtitulo {
         font-size: 25px;
         padding-right: 7%;
         padding-left: 7%;
@@ -628,7 +653,7 @@
         margin: 0;
     }
 
-    .trt {
+    .titulo {
         justify-content: flex-end;
         font-size: 60px;
         padding-bottom: 2%;
@@ -655,6 +680,7 @@
         margin-left: 10px;
         margin-right: 10px;
     }
+
 
     /* GRID TRABAJOS REALIZADOS 1 */
 
@@ -710,6 +736,7 @@
         padding-top: 0;
         padding-bottom: 0;
     }
+
     /* TRABAJOS REALIZADOS */
     /* SERVICIOS ADICIONALES */
 
@@ -840,6 +867,12 @@
         font-size: 50px;
     }
 
+    .txtBtnVT1:hover,
+    .txtBtnVT2:hover {
+        color: rgb(69, 33, 16);
+        background-color: rgb(219, 152, 104);
+    }
+
     .reseñas {
         display: flex;
         flex-direction: row;
@@ -865,7 +898,7 @@
     }
 
     /* TRABAJOS REALIZADOS */
-    .subTitTR {
+    .subtitulo {
         display: flex;
         font-size: 28px;
         padding-right: 3%;
@@ -873,7 +906,7 @@
         justify-content: flex-end;
     }
 
-    .trt {
+    .titulo {
         justify-content: flex-end;
         font-size: 60px;
         padding: 3%;
@@ -902,6 +935,7 @@
         gap: 3%;
         padding: 3%;
     }
+
     /* GRID TRABAJOS REALIZADOS 1 */
 
     .descripcion {
@@ -917,6 +951,15 @@
 
     /* TRABAJOS REALIZADOS */
     /* SERVICIOS ADICIONALES */
+
+
+    .imgSA1,
+    .imgSA2,
+    .imgSA3,
+    .imgSA4:hover {
+        animation: zoom ease-in-out 10ms;
+    }
+
 
     .imgSA1,
     .imgSA2,
@@ -958,6 +1001,7 @@
         grid-column: 2;
         grid-row: 2;
     }
+
     /* SERVICIOS ADICIONALES */
     /* PRESUPUESTO */
     .pregunta {
@@ -992,5 +1036,6 @@
         display: flex;
         margin: auto;
     }
+
     /* CONTACTANOS */
 }
