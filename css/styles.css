@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+/*    Fuentes */
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
 @font-face {
     font-family: "Winter Soldier";
     src: url("../fonts/The\ Winter\ Soldier.otf");
@@ -24,11 +28,16 @@ ul a {
     color: rgb(69, 33, 16);
 }
 
+<<<<<<< HEAD
 .atxtBtnVerTrabajo {
+=======
+.atxtBtnVerTrabajo{
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
     text-decoration: none;
     color: aliceblue;
 }
 
+<<<<<<< HEAD
 .offcanvas-header {
     padding-bottom: 0;
 }
@@ -52,6 +61,8 @@ ul a {
     color: rgb(69, 33, 16);
 }
 
+=======
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
 @media screen and (min-width: 320px) {
 
     /* H'S */
@@ -87,12 +98,32 @@ ul a {
         align-items: center;
     }
 
+<<<<<<< HEAD
     .header__logo {
         width: 320px;
         height: 200px;
         display: flex;
         padding-top: 10px;
         padding-bottom: 10px;
+=======
+    .header__alogo {
+        width: 300px;
+        height: 175px;
+        display: flex;
+        padding: 10px;
+        margin: 0;
+        align-items: center;
+    }
+
+    .header__logo,
+    .header__alogoimg {
+        width: 300px;
+        height: 175px;
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0;
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
         align-items: center;
     }
 
@@ -101,11 +132,19 @@ ul a {
         list-style: none;
         display: flex;
         flex-direction: column;
+<<<<<<< HEAD
         padding: 10px;
         font-family: "Winter Soldier";
         font-size: 160%;
         margin-bottom: 0;
         margin-top: 0;
+=======
+        padding: 7px;
+        font-family: "Winter Soldier";
+        font-size: 160%;
+        margin-bottom: 0px;
+        margin-top: 5px;
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
         align-items: center;
     }
 
@@ -116,8 +155,13 @@ ul a {
     .bannerPpal1,
     .bannerPpal2,
     .bannerPpal3 {
+<<<<<<< HEAD
         width: 100%;
         height: 310px;
+=======
+        width: 90%;
+        max-height: max-content;
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
         border: rgb(219, 152, 104);
         border-style: outset;
         border-width: 5px;
@@ -125,6 +169,15 @@ ul a {
         margin-bottom: 2%;
     }
 
+<<<<<<< HEAD
+=======
+    .main__imgsbanner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
     .calltoaction {
         grid-row: 3/3;
         background-color: rgb(69, 33, 16);
@@ -206,11 +259,17 @@ ul a {
         display: flex;
         flex-direction: column;
         align-items: center;
+<<<<<<< HEAD
         justify-content: center;
     }
 
     .ubicacionesTR,
     .ubicacionesTR2 {
+=======
+    }
+
+    .ubicacionesTR {
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
         font-size: 180%;
         color: rgb(69, 33, 16);
         display: flex;
@@ -222,7 +281,11 @@ ul a {
     }
 
     .subtitulo {
+<<<<<<< HEAD
         font-size: 30px;
+=======
+        font-size: 20px;
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
         padding-right: 10%;
         padding-left: 10%;
         padding-bottom: 10%;
@@ -260,11 +323,15 @@ ul a {
     .tr__imgs1,
     .tr__imgs2,
     .tr__imgs3,
+<<<<<<< HEAD
     .tr__imgs4,
     .tr__imgs1v2,
     .tr__imgs2v2,
     .tr__imgs3v2,
     .tr__imgs4v2 {
+=======
+    .tr__imgs4 {
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
         display: flex;
         justify-content: center;
     }
@@ -285,6 +352,7 @@ ul a {
         padding-right: 10%;
     }
 
+<<<<<<< HEAD
     #img_adicionales_padre {
         display: flex;
         flex-direction: row;
@@ -297,6 +365,8 @@ ul a {
         margin-left: 3%;
     }
 
+=======
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
     /* TRABAJOS REALIZADOS */
     /* SERVICIOS ADICIONALES */
 
@@ -318,6 +388,7 @@ ul a {
 
     /* SERVICIOS ADICIONALES */
     /* PRESUPUESTO */
+<<<<<<< HEAD
     /* CONTACTANOS */
     .h2contacto {
         background-color: rgb(238, 212, 193);
@@ -363,11 +434,54 @@ ul a {
         flex-direction: column;
         align-items: center;
         background-color: rgb(238, 212, 193);
+=======
+    .pregunta {
+        margin: 0%;
+        padding-bottom: 1%;
+        text-align: center;
+    }
+
+    /* CONTACTANOS */
+
+    .h2contacto {
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 28px;
+    }
+
+    i {
+        display: flex;
+        flex-direction: row;
+        font-size: 23px;
+        font-style: normal;
+        padding-right: 10%;
+        padding-left: 10%;
+        white-space: pre-line;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-bottom: 7%;
+    }
+
+    .iconosrrss {
+        max-width: 12%;
+        margin: 0;
+        padding: 0;
+        padding-right: 3%;
+    }
+
+    .llenaCampos {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
     }
 
     .formularioContacto {
         display: flex;
         flex-direction: column;
+<<<<<<< HEAD
         align-items: center;
     }
 
@@ -378,6 +492,23 @@ ul a {
     }
 
 
+=======
+        background-color: cornsilk;
+        border-radius: 30px;
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 10%;
+        padding-top: 7%;
+    }
+
+    input {
+        padding: 3%;
+    }
+
+    .txtFormContacto {
+        padding: 2%;
+    }
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
 
     /* CONTACTANOS */
 }
@@ -402,12 +533,15 @@ ul a {
 
     /* RESEÑAS */
 
+<<<<<<< HEAD
     .bannerPpal1,
     .bannerPpal2,
     .bannerPpal3 {
         height: 410px;
     }
 
+=======
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
     /* TRABAJOS REALIZADOS */
     .subtitulo {
         font-size: 25px;
@@ -448,6 +582,10 @@ ul a {
     .header__alogoimg {
         width: 600px;
         height: 250px;
+<<<<<<< HEAD
+=======
+        padding-bottom: 10px;
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
         margin-top: 10px;
     }
 
@@ -457,12 +595,15 @@ ul a {
         margin-top: 10px;
     }
 
+<<<<<<< HEAD
     .bannerPpal1,
     .bannerPpal2,
     .bannerPpal3 {
         height: 580px;
     }
 
+=======
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
     .calltoaction {
         width: 600px;
     }
@@ -519,8 +660,12 @@ ul a {
         padding-top: 0;
     }
 
+<<<<<<< HEAD
     .ubicacionesTR,
     .ubicacionesTR2 {
+=======
+    .ubicacionesTR {
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
         margin: 0;
         justify-content: flex-start;
         padding-left: 5%;
@@ -577,12 +722,15 @@ ul a {
     }
 
     /* GRID TRABAJOS REALIZADOS 2 */
+<<<<<<< HEAD
 
     .img_adicionales_hijo {
         width: 175px;
         height: 175px;
     }
 
+=======
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
     /* TRABAJOS REALIZADOS */
     /* CONTACTANOS */
     i {
@@ -598,11 +746,14 @@ ul a {
         padding-bottom: 5%;
     }
 
+<<<<<<< HEAD
     .mb-3,
     .form-floating {
         width: 600px;
     }
 
+=======
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
     /* CONTACTANOS */
 }
 
@@ -634,17 +785,27 @@ ul a {
 
     ul li {
         font-size: 180%;
+<<<<<<< HEAD
+=======
+        margin: 0;
+        padding: 20px;
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
         text-align: center;
     }
 
     ul li a {
+<<<<<<< HEAD
         color: rgb(69, 33, 16);
+=======
+        padding: 20px;
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
     }
 
     ul li a:hover {
         background-color: rgb(227, 172, 132);
         transform: skewX(1) skewY(1);
         border-radius: 20px;
+<<<<<<< HEAD
         color: rgb(69, 33, 16);
     }
 
@@ -656,6 +817,8 @@ ul a {
         border-style: none;
         margin-bottom: 0;
         margin-top: 10px;
+=======
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
     }
 
     .header__secciones {
@@ -676,12 +839,15 @@ ul a {
         font-style: color rgb(69, 33, 16);
     }
 
+<<<<<<< HEAD
     .txtBtnVT1:hover,
     .txtBtnVT2:hover {
         color: rgb(69, 33, 16);
         background-color: rgb(219, 152, 104);
     }
 
+=======
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
     /* RESEÑAS */
 
     .imgclienta1,
@@ -729,8 +895,12 @@ ul a {
         height: auto;
     }
 
+<<<<<<< HEAD
     .ubicacionesTR,
     .ubicacionesTR2 {
+=======
+    .ubicacionesTR {
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
         justify-content: flex-start;
         padding-left: 5%;
         padding-top: 1%;
@@ -845,6 +1015,7 @@ ul a {
     /* SERVICIOS ADICIONALES */
     /* CONTACTANOS */
 
+<<<<<<< HEAD
     .contacto_padre {
         display: flex;
         flex-direction: row-reverse;
@@ -862,6 +1033,15 @@ ul a {
     .contacto_nieto1 {
         display: flex;
         flex-direction: column;
+=======
+    i {
+        font-size: 30px;
+        align-items: center;
+    }
+
+    .llenaCampos {
+        font-size: 40px;
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
     }
 
     .formularioContacto {
@@ -884,6 +1064,15 @@ ul a {
         padding: 0;
     }
 
+<<<<<<< HEAD
+=======
+    .header__alogo {
+        width: 550px;
+        height: 225px;
+        padding-top: 20px;
+    }
+
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
     .headerpages {
         grid-row: 1/1;
         display: flex;
@@ -891,7 +1080,12 @@ ul a {
         justify-content: space-around;
     }
 
+<<<<<<< HEAD
     .header__logo {
+=======
+    .header__logo,
+    .header__alogoimg {
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
         width: 550px;
         height: 225px;
         padding-top: 20px;
@@ -902,8 +1096,12 @@ ul a {
         flex-direction: row;
         justify-content: space-between;
         font-size: 160%;
+<<<<<<< HEAD
         padding: 1%;
         padding-bottom: 1%;
+=======
+        padding: 3%;
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
         margin-right: 40px;
         margin-left: 25px;
     }
@@ -912,10 +1110,24 @@ ul a {
         align-items: center;
     }
 
+<<<<<<< HEAD
     .bannerPpal1,
     .bannerPpal2,
     .bannerPpal3 {
         border-image: stretch;
+=======
+    .main__imgsbanner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .bannerPpal1,
+    .bannerPpal2,
+    .bannerPpal3 {
+        width: 35pc;
+        height: 35pc;
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
     }
 
     .calltoaction {
@@ -926,6 +1138,15 @@ ul a {
         font-size: 50px;
     }
 
+<<<<<<< HEAD
+=======
+    .txtBtnVT1:hover,
+    .txtBtnVT2:hover {
+        color: rgb(69, 33, 16);
+        background-color: rgb(219, 152, 104);
+    }
+
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
     .reseñas {
         display: flex;
         flex-direction: row;
@@ -953,7 +1174,11 @@ ul a {
     /* TRABAJOS REALIZADOS */
     .subtitulo {
         display: flex;
+<<<<<<< HEAD
         font-size: 30px;
+=======
+        font-size: 28px;
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
         padding-right: 3%;
         padding-bottom: 0;
         justify-content: flex-end;
@@ -966,13 +1191,19 @@ ul a {
     }
 
     .locacionTR {
+<<<<<<< HEAD
         font-size: 50px;
+=======
+        font-size: 65px;
+
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
     }
 
     .iconomaps {
         width: 3%;
     }
 
+<<<<<<< HEAD
     .ubicacionesTR,
     .ubicacionesTR2 {
         justify-content: flex-start;
@@ -984,13 +1215,24 @@ ul a {
     .ubicacionesTR2 {
         justify-content: end;
         padding-right: 5%;
+=======
+    .ubicacionesTR {
+        justify-content: flex-start;
+        padding-left: 5%;
+        margin-top: 5%;
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
     }
 
     /* GRID TRABAJOS REALIZADOS 1 */
     .tr__imgspadre {
         display: grid;
+<<<<<<< HEAD
         grid-template-columns: repeat(3, 225px);
         grid-template-rows: repeat(2, 225px);
+=======
+        grid-template-columns: repeat(3, 275px);
+        grid-template-rows: repeat(2, 275px);
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
         gap: 3%;
         padding: 3%;
     }
@@ -1005,6 +1247,7 @@ ul a {
         justify-content: end;
         font-size: 24px;
         padding: 3%;
+<<<<<<< HEAD
         padding-top: 0;
     }
 
@@ -1015,6 +1258,23 @@ ul a {
 
     /* TRABAJOS REALIZADOS */
     /* SERVICIOS ADICIONALES */
+=======
+    }
+
+
+    /* TRABAJOS REALIZADOS */
+    /* SERVICIOS ADICIONALES */
+
+
+    .imgSA1,
+    .imgSA2,
+    .imgSA3,
+    .imgSA4:hover {
+        animation: zoom ease-in-out 10ms;
+    }
+
+
+>>>>>>> c40d4e9656d6cb62abcbfbb1dd049f9930b1a726
     .imgSA1,
     .imgSA2,
     .imgSA3,
