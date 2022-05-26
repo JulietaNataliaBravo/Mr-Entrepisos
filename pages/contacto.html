@@ -47,58 +47,62 @@
 
                 <div class="contacto_nieto1">
                     <a href="https://www.instagram.com/entrepisos.alejandro/" class="contacto_links">
-                        <div class="contacto_bisnieto1"><img src="./../img/iconos/ig.png" alt="iconoig" class="iconosrrss"><span>Instagram</span></div>
+                        <div class="contacto_bisnieto1"><img src="./../img/iconos/ig.png" alt="iconoig"
+                                class="iconosrrss"><span>Instagram</span></div>
                     </a>
                     <a href="https://www.facebook.com/Entrepisos-y-Pergolas-en-madera-o-hierro-1724225657901565/"
                         class="contacto_links">
-                        <div class="contacto_bisnieto1"><img src="./../img/iconos/fb.png" alt="iconofb" class="iconosrrss"><span>Facebook</span></div>
+                        <div class="contacto_bisnieto1"><img src="./../img/iconos/fb.png" alt="iconofb"
+                                class="iconosrrss"><span>Facebook</span></div>
                     </a>
                     <a href="" class="contacto_links">
-                        <div class="contacto_bisnieto1"><img src="./../img/iconos/wsp.png" alt="iconowsp" class="iconosrrss"><span>(11) 55733-9601</span></div>
+                        <div class="contacto_bisnieto1"><img src="./../img/iconos/wsp.png" alt="iconowsp"
+                                class="iconosrrss"><span>(11) 55733-9601</span></div>
                     </a>
                 </div>
             </div>
+
             <!--Formulario-->
             <div class="contacto_hijo2">
                 <strong class="llenaCampos">Por favor, llena los campos</strong>
                 <form action="" class="formularioContacto">
                     <div class="txtFormContacto">
-                        <caption>Nombre</caption>
-                    </div>
-                    <input type="text" id="Nombre" pattern="[Aa-Zz]*">
-                    <div class="txtFormContacto">
-                        <caption>Número de teléfono</caption>
-                    </div>
-                    <input type="number" placeholder="Ej.: 1123456789">
-                    <div class="txtFormContacto">
-                        <caption>Mail</caption>
-                    </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput"
+                                placeholder="Ej: Juan Perez">
+                        </div>
 
-                    <div class="row g-2">
-                        <div class="col-md">
-                            <div class="form-floating">
-                                <input type="email" class="form-control" id="floatingInputGrid"
-                                    placeholder="nombre@ejemplo.com" value="">
-                                <label for="floatingInputGrid">Dirección de correo electrónico</label>
-                            </div>
-                            <div class="txtFormContacto">
-                                <caption>Motivo del contacto</caption>
-                            </div>
-                            <div class="col-md">
-                                <div class="form-floating">
-                                    <select class="form-select" id="floatingSelectGrid"
-                                        aria-label="Floating label select example">
-                                        <option selected>Motivo...</option>
-                                        <option value="1">Quiero consultar por un presupuesto</option>
-                                        <option value="2">Quiero un servicio adicional</option>
-                                        <option value="3">Otras consultas</option>
-                                    </select>
-                                </div>
-                                <input type="submit" value="Enviar">
-                </form>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Número de teléfono</label>
+                            <input type="number" class="form-control" id="formGroupExampleInput2"
+                                placeholder="Ej: 011 2345-6789">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="formGroupExampleInput"
+                                placeholder="Ej: juanperez@gmail.com">
+                        </div>
+
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                <option selected>Selecciona...</option>
+                                <option value="1">Quiero un entrepiso/servicio adicional</option>
+                                <option value="2">Necesito re-pactar una fecha</option>
+                                <option value="3">Información adicional</option>
+                            </select>
+                            <label for="floatingSelect">Motivo de la consulta</label>
+                        </div>
+
+                        <div class="botonesFormulario">
+                            <button type="button" class="btn btn-outline-primary">Limpiar</button>
+
+                            <button type="button" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
             </div>
         </div>
-
 
     </main>
 

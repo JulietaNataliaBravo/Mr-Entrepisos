@@ -318,7 +318,7 @@ ul a {
 
     /* SERVICIOS ADICIONALES */
     /* PRESUPUESTO */
-        /* CONTACTANOS */
+    /* CONTACTANOS */
     .h2contacto {
         background-color: rgb(238, 212, 193);
         padding: 1%;
@@ -328,10 +328,10 @@ ul a {
         margin-bottom: 2%;
     }
 
-.llenaCampos{
-    font-size: 30px;
-    padding-bottom: 10%;
-}
+    .llenaCampos {
+        font-size: 30px;
+        padding-bottom: 10%;
+    }
 
     .contacto_padre {
         display: flex;
@@ -365,12 +365,19 @@ ul a {
         background-color: rgb(238, 212, 193);
     }
 
-    .formularioContacto{
+    .formularioContacto {
         display: flex;
         flex-direction: column;
         align-items: center;
-        
     }
+
+    .botonesFormulario {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 7%;
+    }
+
+
 
     /* CONTACTANOS */
 }
@@ -589,6 +596,11 @@ ul a {
     .formularioContacto {
         font-size: 35px;
         padding-bottom: 5%;
+    }
+
+    .mb-3,
+    .form-floating {
+        width: 600px;
     }
 
     /* CONTACTANOS */
@@ -833,13 +845,23 @@ ul a {
     /* SERVICIOS ADICIONALES */
     /* CONTACTANOS */
 
-    i {
-        font-size: 30px;
-        align-items: center;
+    .contacto_padre {
+        display: flex;
+        flex-direction: row-reverse;
     }
 
-    .llenaCampos {
-        font-size: 40px;
+    .contacto_hijo1 {
+        width: 300px;
+    }
+
+    .contacto_hijo2{
+        width: auto;
+        height: auto;
+    }
+
+    .contacto_nieto1 {
+        display: flex;
+        flex-direction: column;
     }
 
     .formularioContacto {
