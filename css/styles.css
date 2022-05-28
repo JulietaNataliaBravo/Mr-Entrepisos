@@ -1,0 +1,1110 @@
+@font-face {
+    font-family: "Winter Soldier";
+    src: url("../fonts/The\ Winter\ Soldier.otf");
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("../fonts/Oswald.ttf");
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer {
+    background-color: rgb(238, 212, 193);
+}
+
+h2 {
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.bg-light {
+    color: rgb(238, 212, 193);
+}
+
+.atxtBtnVerTrabajo {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.offcanvas-header {
+    padding-bottom: 0;
+}
+
+.img_adicionales_padre {
+    padding-top: 1px;
+}
+
+.contacto_links {
+    text-decoration: none;
+    color: rgb(69, 33, 16);
+    font-size: 25px;
+    padding: 6%;
+    margin: 2%;
+}
+
+.contacto_links:hover {
+    background-color: rgb(227, 172, 132);
+    transform: skewX(1) skewY(1);
+    border-radius: 20px;
+    color: rgb(69, 33, 16);
+}
+
+@media screen and (min-width: 390px) {
+
+    /* H'S */
+
+    h1 {
+        font-size: 275%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 1%;
+        margin-right: 10%;
+        color: rgb(69, 33, 16);
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(238, 212, 193);
+    }
+
+    /* H'S */
+    /* INDEX */
+    .index {
+        display: grid;
+        max-width: auto;
+        grid-template-rows: 6;
+    }
+
+    .header {
+        grid-row: 1/1;
+        display: flex;
+    }
+
+    .header__logo {
+        width: 270px;
+        height: 160px;
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        align-items: center;
+    }
+
+    .header2 {
+        display: none;
+    }
+
+    nav {
+        margin: auto;
+    }
+
+    ul,
+    ul li {
+        padding: 1px;
+        font-family: "Winter Soldier";
+        font-size: 150%;
+        align-items: center;
+    }
+
+    .f2 {
+        grid-row: 2/2;
+    }
+
+    .bannerPpal1,
+    .bannerPpal2,
+    .bannerPpal3 {
+        width: 100%;
+        height: 310px;
+        border: rgb(219, 152, 104);
+        border-style: outset;
+        border-width: 5px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .calltoaction {
+        grid-row: 3/3;
+        background-color: rgb(69, 33, 16);
+        display: flex;
+        border-width: 7px 0px 7px 0px;
+        border-color: rgb(219, 152, 104);
+        border-style: double;
+        justify-content: center;
+        border-radius: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 300px;
+        margin: auto;
+
+    }
+
+    .calltoaction a {
+        font-size: 30px;
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    /* RESEÑAS */
+
+    .reseñas {
+        grid-row: 4/4;
+        display: flex;
+        background-color: rgb(255, 240, 209);
+        max-width: 100%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .imgclienta1,
+    .imgclienta2 {
+        width: 150px;
+        max-height: max-content;
+        border-style: ridge;
+        color: white;
+        border-width: 5px;
+        border-radius: 110%;
+        margin-top: 15px;
+    }
+
+    .imgclienta2 {
+        margin-top: 70px;
+    }
+
+    .txtreseña1,
+    .txtreseña2 {
+        margin-top: 6px;
+        white-space: pre-line;
+        font-size: 18px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-style: oblique;
+        margin-bottom: 30px;
+    }
+
+    .txtBtnVT1,
+    .txtBtnVT2 {
+        font-size: 22px;
+        color: white;
+        border-radius: 10px;
+        border-color: rgb(69, 33, 16);
+        border-width: 5px;
+        border-style: solid;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: rgb(69, 33, 16);
+    }
+
+    /* INDEX */
+    /* TRABAJOS REALIZADOS */
+    .trabajosRealizados {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ubicacionesTR,
+    .ubicacionesTR2 {
+        font-size: 180%;
+        color: rgb(69, 33, 16);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5%;
+        padding-top: 10%;
+    }
+
+    .subtitulo {
+        font-size: 30px;
+        padding-right: 10%;
+        padding-left: 10%;
+        padding-bottom: 10%;
+        margin: 0;
+    }
+
+    .titulo {
+        margin: 0;
+        padding: 10%;
+
+    }
+
+    .locacionTR {
+        font-size: 18px;
+    }
+
+    .iconomaps {
+        width: 10%;
+        height: 10%;
+    }
+
+    .tr__imgs {
+        width: 60%;
+        height: auto;
+        border: rgb(219, 152, 104);
+        border-style: outset;
+        border-width: 5px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .tr__imgs1,
+    .tr__imgs2,
+    .tr__imgs3,
+    .tr__imgs4,
+    .tr__imgs1v2,
+    .tr__imgs2v2,
+    .tr__imgs3v2,
+    .tr__imgs4v2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .tr__imgspadre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .descripcion {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .descripcionesTR {
+        white-space: pre-line;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #img_adicionales_padre {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start
+    }
+
+    .img_adicionales_hijo {
+        width: 200px;
+        height: 100px;
+        margin-left: 3%;
+    }
+
+    /* TRABAJOS REALIZADOS */
+    /* SERVICIOS ADICIONALES */
+
+    .imgSA {
+        width: 50%;
+        height: auto;
+        border-radius: 5%;
+        border-style: ridge;
+        color: white;
+        border-width: 5px;
+    }
+
+    .imgSA1,
+    .imgSA2,
+    .imgSA3,
+    .imgSA4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: rgb(219, 152, 104);
+        margin-bottom: 10px;
+        justify-content: space-between;
+    }
+
+    /* SERVICIOS ADICIONALES */
+    /* PRESUPUESTO */
+    .formularioPresupuesto {
+        border-radius: 20px;
+        background-color: rgb(238, 212, 193);
+        margin-bottom: 10%;
+        margin-top: 10%;
+        padding: 10%;
+    }
+
+    #PRbtnEnviar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 5%;
+    }
+
+    /* CONTACTANOS */
+    .h2contacto {
+        background-color: rgb(238, 212, 193);
+        padding: 1%;
+        text-align: center;
+        margin: 0;
+        font-size: 30px;
+        margin-bottom: 2%;
+    }
+
+    .llenaCampos {
+        font-size: 30px;
+        padding-bottom: 10%;
+    }
+
+    .contacto_padre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .iconosrrss {
+        width: 40px;
+        height: 40px;
+        align-self: center;
+    }
+
+    .contacto_nieto1 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contacto_bisnieto1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto_hijo2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(238, 212, 193);
+        margin-bottom: 10%;
+        padding-bottom: 5%;
+        border-radius: 30px;
+    }
+
+    .formularioContacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botonesFormulario {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 7%;
+    }
+
+
+
+    /* CONTACTANOS */
+}
+
+@media screen and (min-width: 480px) {
+
+    .header__logo {
+        width: 400px;
+        height: 170px;
+    }
+
+    ul,
+    ul li {
+        font-size: 150%;
+    }
+
+    /* RESEÑAS */
+
+    .bannerPpal1,
+    .bannerPpal2,
+    .bannerPpal3 {
+        height: 410px;
+    }
+
+    /* TRABAJOS REALIZADOS */
+    .subtitulo {
+        font-size: 25px;
+    }
+
+    .titulo {
+        justify-content: center;
+    }
+
+    .locacionTR {
+        font-size: 40px;
+    }
+
+    .descripcion {
+        font-size: 30px;
+    }
+
+    .descripcionesTR {
+        font-size: 20px;
+    }
+
+    /* TRABAJOS REALIZADOS */
+    /* SERVICIOS ADICIONALES */
+    /* SERVICIOS ADICIONALES */
+    /* CONTACTANOS */
+    /* CONTACTANOS */
+}
+
+@media screen and (min-width: 768px) {
+
+    .header__logo {
+        width: 450px;
+        height: 180px;
+        margin-top: 10px;
+    }
+
+    ul,
+    ul li {
+        font-size: 140%;
+        margin-top: 10px;
+    }
+
+    .bannerPpal1,
+    .bannerPpal2,
+    .bannerPpal3 {
+        height: 580px;
+    }
+
+    .calltoaction {
+        width: 600px;
+    }
+
+    .calltoaction a {
+        font-size: 50px;
+    }
+
+    /* RESEÑAS */
+    .imgclienta1,
+    .imgclienta2 {
+        width: 225px;
+        border-width: 10px;
+        margin-top: 70px;
+    }
+
+    .imgclienta2 {
+        margin-top: 120px;
+    }
+
+    .txtreseña1,
+    .txtreseña2 {
+        font-size: 25px;
+    }
+
+    .txtBtnVT1,
+    .txtBtnVT2 {
+        font-size: 30px;
+    }
+
+    /* INDEX */
+
+    /* TRABAJOS REALIZADOS */
+    .subtitulo {
+        font-size: 30px;
+        padding-bottom: 0;
+    }
+
+    .locacionTR {
+        font-size: 50px;
+    }
+
+    .iconomaps {
+        width: 4%;
+    }
+
+    .descripcion {
+        font-size: 35px;
+    }
+
+    .descripcionesTR {
+        font-size: 20px;
+        padding: 5%;
+        padding-top: 0;
+    }
+
+    .ubicacionesTR,
+    .ubicacionesTR2 {
+        margin: 0;
+        justify-content: flex-start;
+        padding-left: 5%;
+    }
+
+    /* GRID TRABAJOS REALIZADOS 1 */
+    .trabajosRealizados {
+        display: flex;
+        flex-direction: row;
+        margin-right: 2%;
+    }
+
+    .trabajosRealizados2 {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .tr__imgs {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 5%;
+    }
+
+    .tr__imgspadre {
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(3, 150px);
+        gap: 4%;
+        align-content: center;
+        padding: 5%;
+    }
+
+    .tr__imgs1 {
+        grid-row: 1 / 3;
+    }
+
+    .tr__imgs3 {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+
+    /* GRID TRABAJOS REALIZADOS 1 */
+    /* GRID TRABAJOS REALIZADOS 2 */
+    .tr__imgs3v2 {
+        grid-row: 3;
+        grid-column: 1/ 3;
+    }
+
+    .tr__imgs4v2 {
+        grid-row: 1 / 3;
+        grid-column: 2;
+    }
+
+    /* GRID TRABAJOS REALIZADOS 2 */
+
+    .img_adicionales_hijo {
+        width: 175px;
+        height: 175px;
+    }
+
+    /* TRABAJOS REALIZADOS */
+    /* SERVICIOS ADICIONALES */
+
+    .imgSA {
+        object-fit: cover;
+        width: 250px;
+        height: 250px;
+        border-radius: 5%;
+    }
+
+    .imgSA_padre {
+        display: grid;
+        grid-template-columns: 2 repeat(250px);
+        grid-template-rows: 2 repeat(250px);
+        padding-left: 5%;
+        gap: 1%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+    }
+
+    .imgSA4 {
+        grid-column: 2 / 2;
+    }
+
+    /* CONTACTANOS */
+    i {
+        font-size: 30px;
+    }
+
+    .llenaCampos {
+        font-size: 40px;
+    }
+
+    .formularioContacto {
+        font-size: 35px;
+        padding-bottom: 5%;
+    }
+
+    .mb-3,
+    .form-floating {
+        width: 600px;
+    }
+
+    /* CONTACTANOS */
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar-light {
+        display: none;
+    }
+
+    .header {
+        display: block;
+    }
+
+    .header2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .header__logo a {
+        width: 75%;
+        height: auto;
+        float: left;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    .header__secciones {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    ul li {
+        display: flex;
+        list-style: none;
+        text-align: center;
+        width: 120px;
+        padding: 13%;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin: auto;
+        align-items: center;
+        float: left;
+    }
+
+    ul li a {
+        display: flex;
+        font-size: 100%;
+        text-decoration: none;
+        color: rgb(69, 33, 16);
+    }
+
+    ul li a:hover {
+        background-color: rgb(227, 172, 132);
+        transform: skewX(1) skewY(1);
+        border-radius: 20px;
+    }
+
+    .calltoaction {
+        width: 600px;
+    }
+
+    .calltoaction:hover {
+        background-color: rgb(219, 152, 104);
+    }
+
+    .calltoaction a:hover {
+        background-color: rgb(219, 152, 104);
+        font-style: color rgb(69, 33, 16);
+    }
+
+    .txtBtnVT1:hover,
+    .txtBtnVT2:hover {
+        color: rgb(69, 33, 16);
+        background-color: rgb(219, 152, 104);
+    }
+
+    /* RESEÑAS */
+
+    .imgclienta1,
+    .imgclienta2 {
+        width: 225px;
+        border-width: 10px;
+        margin-top: 70px;
+    }
+
+    .imgclienta2 {
+        margin-top: 120px;
+    }
+
+    .txtreseña1,
+    .txtreseña2 {
+        font-size: 25px;
+    }
+
+    .txtBtnVT1,
+    .txtBtnVT2 {
+        font-size: 30px;
+    }
+
+    /* TRABAJOS REALIZADOS */
+    .subtitulo {
+        font-size: 25px;
+        padding-right: 7%;
+        padding-left: 7%;
+        padding-bottom: 7%;
+    }
+
+    .titulo {
+        justify-content: flex-end;
+        font-size: 60px;
+        padding-bottom: 2%;
+    }
+
+    .locacionTR {
+        font-size: 40px;
+    }
+
+    .iconomaps {
+        width: 6%;
+        height: auto;
+    }
+
+    .ubicacionesTR,
+    .ubicacionesTR2 {
+        justify-content: flex-start;
+        padding-left: 5%;
+        padding-top: 1%;
+        margin-bottom: 0;
+    }
+
+    .trabajosRealizados,
+    .trabajosRealizados2 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+
+    /* GRID TRABAJOS REALIZADOS 1 */
+
+    .tr__imgspadre {
+        display: grid;
+        grid-template-columns: repeat(3, 150px);
+        grid-template-rows: repeat(2, 150px);
+        gap: 5%;
+        justify-content: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .tr__imgs1 {
+        grid-row: 1 / 3;
+    }
+
+    .tr__imgs3 {
+        grid-column: 3 / 4;
+        grid-row: 1 / 3;
+    }
+
+    /* GRID TRABAJOS REALIZADOS 1 */
+    /* GRID TRABAJOS REALIZADOS 2 */
+    .tr__imgs1v2 {
+        grid-column: 2;
+    }
+
+    .tr__imgs4v2 {
+        grid-column: 3 / 3;
+    }
+
+    .tr__imgs3v2 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .tr__imgs2v2 {
+        grid-column: 1;
+        grid-row: 1/3;
+    }
+
+    /* GRID TRABAJOS REALIZADOS 2 */
+    .descripcion {
+        font-size: 28px;
+    }
+
+    .descripcionesTR {
+        justify-content: end;
+        font-size: 18px;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    /* TRABAJOS REALIZADOS */
+    /* PRESUPUESTO */
+    .formularioPresupuesto {
+        border-radius: 20px;
+        background-color: rgb(238, 212, 193);
+        margin: 10%;
+        padding: 2%;
+        padding-right: 0;
+
+    }
+
+
+    #PRbtnEnviar {
+        padding-top: 5%;
+
+    }
+
+    /* PRESUPUESTO */
+    /* CONTACTANOS */
+
+    .contacto_padre {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .contacto_hijo1 {
+        width: 300px;
+    }
+
+    .h2contacto {
+        border-radius: 30px;
+    }
+
+    .contacto_hijo2 {
+        width: auto;
+        height: auto;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .contacto_nieto1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formularioContacto {
+        font-size: 35px;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+
+    /* CONTACTANOS */
+
+    .contacto_padre {
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .header2 {
+        display: flex;
+        flex-direction: wrap;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .header__logo {
+        width: 550px;
+        height: 225px;
+    }
+
+    ul {
+        display: flex;
+        margin-right: 25%;
+        gap: 15%;
+    }
+
+    li {
+        display: block;
+    }
+
+    ul,
+    ul li {
+        font-size: 150%;
+
+    }
+
+    .header__secciones {
+        align-items: center;
+    }
+
+    .bannerPpal1,
+    .bannerPpal2,
+    .bannerPpal3 {
+        object-fit: cover;
+        width: 100%;
+        height: 800px;
+        margin-top: 0;
+    }
+
+    .calltoaction {
+        width: 600px;
+    }
+
+    .calltoaction a {
+        font-size: 50px;
+    }
+
+    .reseñas {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 2%;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+
+    .txtreseña2,
+    .txtreseña1 {
+        width: 550px;
+        text-align: center;
+        margin-top: 40px;
+        align-items: center;
+    }
+
+    .imgclienta1,
+    .imgclienta2 {
+        width: 200px;
+        border-width: 10px;
+        margin-top: 3%;
+    }
+
+    /* TRABAJOS REALIZADOS */
+    .subtitulo {
+        display: flex;
+        font-size: 30px;
+        padding-right: 3%;
+        padding-bottom: 3%;
+        justify-content: flex-end;
+    }
+
+    .titulo {
+        justify-content: flex-end;
+        font-size: 60px;
+        padding: 3%;
+    }
+
+    .locacionTR {
+        font-size: 50px;
+    }
+
+    .iconomaps {
+        width: 3%;
+    }
+
+    .ubicacionesTR,
+    .ubicacionesTR2 {
+        justify-content: flex-start;
+        padding-left: 5%;
+        padding-bottom: 0;
+        padding-top: 2%;
+    }
+
+    .ubicacionesTR2 {
+        justify-content: end;
+        padding-right: 5%;
+    }
+
+    /* GRID TRABAJOS REALIZADOS 1 */
+    .tr__imgspadre {
+        display: grid;
+        grid-template-columns: repeat(3, 225px);
+        grid-template-rows: repeat(2, 225px);
+        gap: 3%;
+        padding: 3%;
+    }
+
+    /* GRID TRABAJOS REALIZADOS 1 */
+
+    .descripcion {
+        font-size: 28px;
+    }
+
+    .descripcionesTR {
+        justify-content: end;
+        font-size: 24px;
+        padding: 3%;
+        padding-top: 0;
+    }
+
+    .img_adicionales_hijo {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* TRABAJOS REALIZADOS */
+    /* SERVICIOS ADICIONALES */
+    .imgSA1,
+    .imgSA2,
+    .imgSA3,
+    .imgSA4 {
+        max-width: 100%;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .imgSA {
+        display: grid;
+        grid-template-columns: repeat 2;
+        grid-template-rows: repeat 2;
+        gap: 1%;
+        max-width: 800px;
+        justify-items: center;
+        margin-left: 5%;
+        margin-right: 0%;
+    }
+
+    .imgSA1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .imgSA2 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .imgSA3 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .imgSA4 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    /* SERVICIOS ADICIONALES */
+    /* PRESUPUESTO */
+    .pregunta {
+        display: flex;
+        justify-content: end;
+        margin-right: 7%;
+    }
+
+    /* CONTACTANOS */
+    i {
+        font-size: 30px;
+        align-items: center;
+    }
+
+    .llenaCampos {
+        font-size: 40px;
+    }
+
+    .formularioContacto {
+        font-size: 35px;
+        padding-bottom: 5%;
+        padding-top: 7%;
+    }
+
+    input {
+        height: 120px;
+        width: 300px;
+        display: flex;
+        margin: auto;
+    }
+
+    /* CONTACTANOS */
+}
