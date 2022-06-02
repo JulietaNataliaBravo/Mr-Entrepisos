@@ -15,16 +15,50 @@
 <body>
     <!--HEADER - LOGO+SECCIÓNES-->
     <header>
-        <nav class="header">
-            <a href="./../index.html"><img src="./../img/mr entrepisos c cartel.png" alt="logoppal" class="header__logo"></a>
+        <header class="header">
+          <nav class="navbar navbar-light" >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./../index.html"><img src="./../img/mr entrepisos c cartel.png" alt="logo_ppal" class="header__logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Trabajos realizados</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./serviciosAdicionales.html">Servicios adicionales</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./presupuesto.html">Presupuesto</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <nav class="header2">
+            <a href="./../index.html" class="header__logo"><img src="./../img/mr entrepisos c cartel.png"
+                    alt="logoppal" class="header__logo"></a>
             <ul class="header__secciones">
                 <li>
-                    <a href="./trabajosRealizados.html">Trabajos 
-                        realizados</a>
+                    <a href="#">Trabajos realizados</a>
                 </li>
                 <li>
-                    <a href="./serviciosAdicionales.html">Servicios 
-                        Adicionales</a>
+                    <a href="./serviciosAdicionales.html">Servicios Adicionales</a>
                 </li>
                 <li>
                     <a href="./presupuesto.html">Presupuesto</a>
@@ -34,13 +68,14 @@
                 </li>
             </ul>
         </nav>
+      </header>
     </header>
     <!--FIN DEL HEADER - LOGO+SECCIÓNES-->
     <main>
         <h1 class="titulo animate__animated   animate__fadeIn">Trabajos realizados</h1>
-        <p class="subtitulo"><sub>A continuación, te mostraremos algunos de los trabajos realizados por nosotros para que
-            puedas ver <strong>las experiencias de nuestros clientes</strong> y el <strong>paso a paso</strong> de
-            nuestro trabajo.</sub></p>
+        <p class="subtitulo">A continuación, te mostraremos algunos de los trabajos realizados por nosotros para que
+            puedas ver las experiencias de nuestros clientes y el paso a paso de
+            nuestro trabajo.</p>
         <!--Experiencia 1 y fotos del trabajo-->
         <div class="ubicacionesTR">
             <img src="./../img/iconos/loc.png" alt="iconomaps" class="iconomaps">

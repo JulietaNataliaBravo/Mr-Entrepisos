@@ -12,11 +12,45 @@
 
 </head>
 
-<body class="index">
+<body>
     <!--HEADER - LOGO+SECCIÓNES-->
-    <header>
-        <nav class="header">
-            <img src="./img/mr entrepisos c cartel.png" alt="logoppal" class="header__logo"><a href=""></a>
+    <header class="header">
+          <nav class="navbar navbar-light" >
+            <div class="container-fluid">
+              <a class="navbar-brand" href=""><img src="./img/mr entrepisos c cartel.png" alt="logo_ppal" class="header__logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./pages/trabajosRealizados.html">Trabajos realizados</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./pages/serviciosAdicionales.html">Servicios adicionales</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./pages/presupuesto.html">Presupuesto</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <nav class="header2">
+            <a href="index.html"><img src="./img/mr entrepisos c cartel.png" alt="logoppal" class="header__logo"></a>
             <ul class="header__secciones">
                 <li>
                     <a href="./pages/trabajosRealizados.html">Trabajos realizados</a>
@@ -25,12 +59,10 @@
                     <a href="./pages/serviciosAdicionales.html">Servicios Adicionales</a>
                 </li>
                 <li>
-                    <a href="./pages/presupuesto.html">Presupuesto
-                    </a>
+                    <a href="./pages/presupuesto.html">Presupuesto</a>
                 </li>
                 <li>
-                    <a href="./pages/contacto.html">Contáctanos
-                    </a>
+                    <a href="./pages/contacto.html">Contáctanos</a>
                 </li>
             </ul>
         </nav>
@@ -70,7 +102,7 @@
         <section class="calltoaction"><a href="./pages/presupuesto.html">¡Cotiza el tuyo ahora!</a></section>
 
         <!--Experiencia de clientes-->
-        <section class="f4">
+        <section class="reseñas_padre">
             <article class="reseñas">
                 <div class="reseña1">
                         <img src="./img/clienta1.png" alt="fotoclienta1" class="imgclienta1">
@@ -91,6 +123,7 @@
                 </div>
             </article>
         </section>
+
 
 
     </main>
