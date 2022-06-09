@@ -1,6 +1,9 @@
 @import "fuentes";
 @import "colores";
 @import "mediaqueries";
+@import "mixins";
+
+$coloresrrss:(facebook:#55acee, instagram:#E1306C, whatsapp: #25D366);
 
 body {
     font-family: "Oswald";
@@ -50,6 +53,7 @@ header {
 
     @media only screen and (min-width: $s) {
         .header__logo {
+            @extend .header__logo;
             width: 400px;
             height: 170px;
         }
@@ -191,34 +195,36 @@ main {
         }
 
         .reseñas {
-            display: flex;
+            @include flexcolumncentrado;
             background: linear-gradient(to top, $marronClaro2, white);
             padding: 0px 60px 20px 60px;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
 
-            img {
-                width: 150px;
-                max-height: max-content;
-                border: $bordeClientas;
-                border-radius: 110%;
-                margin-top: 70px;
-            }
+            div {
+                @include flexcolumncentrado;
 
-            p {
-                margin: 10px 0 10px 0;
-                white-space: pre-line;
-                font-size: 18px;
-                padding: 20px 0 20px 0;
-                font-style: oblique;
-            }
+                img {
+                    width: 150px;
+                    max-height: max-content;
+                    border: $bordeClientas;
+                    border-radius: 110%;
+                    margin-top: 70px;
+                }
 
-            span {
-                font-size: 20px;
-                background-color: $marronOscuro;
-                padding: 12px;
-                border-radius: 10px;
+                p {
+                    margin: 10px 0 10px 0;
+                    white-space: pre-line;
+                    font-size: 18px;
+                    padding: 20px 0 20px 0;
+                    font-style: oblique;
+                }
+
+                span {
+                    font-size: 20px;
+                    background-color: $marronOscuro;
+                    padding: 12px;
+                    border-radius: 10px;
+                }
+
             }
 
         }
@@ -262,15 +268,11 @@ main {
 
         .trabajosRealizados,
         .trabajosRealizados2 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            @include flexcolumncentrado;
 
             article {
+                @include flexcolumncentrado;
                 padding: 8% 15% 0 15%;
-                display: flex;
-                flex-direction: column;
                 font-size: 20px;
 
                 strong {
@@ -348,8 +350,7 @@ main {
         }
 
         .contacto_padre {
-            display: flex;
-            flex-direction: column;
+            @include flexcolumncentrado;
 
             .contacto_nieto1 {
                 display: flex;
@@ -362,51 +363,53 @@ main {
                     display: flex;
                     justify-content: space-evenly;
                     background-color: $marronMedio;
-                    border: $bordeTR;
                     border-radius: 20px;
+                    border-color: map-get($map: coloresrrss, $key: instagram);border-width: 10px;
                     padding: 2%;
 
                     div {
-                        display: flex;
-                        flex-direction: column;
+                        @include flexcolumncentrado;
                         color: $blanco;
+                    }
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        align-self: center;
                     }
                 }
             }
 
-            img {
-                width: 50px;
-                height: 50px;
-                align-self: center;
+        }
+
+
+        .contacto_hijo2 {
+            background-color: $marronClaro2;
+
+            strong {
+                display: flex;
+                justify-content: center;
+                font-size: 30px;
+                padding: 10% 0 15% 0;
             }
 
-            .contacto_hijo2 {
-                background-color: $marronClaro2;
+            input {
+                width: 80%;
+                margin: auto;
+            }
 
-                strong {
-                    display: flex;
-                    justify-content: center;
-                    font-size: 30px;
-                    padding: 10% 0 15% 0;
-                }
+            select {
+                width: 80%;
 
-                input {
-                    width: 80%;
-                    margin: auto;
-                }
+                margin: auto;
+            }
 
-                select {
-                    width: 80%;
-
-                    margin: auto;
-                }
-
-                label {
-                    display: flex;
-                    justify-content: center;
-                }
+            label {
+                display: flex;
+                justify-content: center;
             }
         }
+
 
         .botonesFormulario {
             display: flex;
@@ -416,8 +419,8 @@ main {
                 margin: 10%;
             }
         }
-
     }
+
 
     @media only screen and (min-width: $s) {
 
@@ -658,13 +661,9 @@ main {
                 .txtreseña2 {
                     margin-bottom: 10px;
                 }
-
-
             }
-
         }
     }
-
 }
 
 footer {

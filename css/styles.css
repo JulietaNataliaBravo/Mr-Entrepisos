@@ -125,28 +125,37 @@ main a {
       font-size: 30px; }
   main .reseñas {
     display: flex;
-    background: linear-gradient(to top, #fff0d1, white);
-    padding: 0px 60px 20px 60px;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center; }
-    main .reseñas img {
-      width: 150px;
-      max-height: max-content;
-      border: ridge 7px white;
-      border-radius: 110%;
-      margin-top: 70px; }
-    main .reseñas p {
-      margin: 10px 0 10px 0;
-      white-space: pre-line;
-      font-size: 18px;
-      padding: 20px 0 20px 0;
-      font-style: oblique; }
-    main .reseñas span {
-      font-size: 20px;
-      background-color: #452110;
-      padding: 12px;
-      border-radius: 10px; }
+    align-content: center;
+    text-align: center;
+    background: linear-gradient(to top, #fff0d1, white);
+    padding: 0px 60px 20px 60px; }
+    main .reseñas div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center; }
+      main .reseñas div img {
+        width: 150px;
+        max-height: max-content;
+        border: ridge 7px white;
+        border-radius: 110%;
+        margin-top: 70px; }
+      main .reseñas div p {
+        margin: 10px 0 10px 0;
+        white-space: pre-line;
+        font-size: 18px;
+        padding: 20px 0 20px 0;
+        font-style: oblique; }
+      main .reseñas div span {
+        font-size: 20px;
+        background-color: #452110;
+        padding: 12px;
+        border-radius: 10px; }
   main h1 {
     font-size: 275%;
     display: flex;
@@ -180,13 +189,19 @@ main a {
   main .trabajosRealizados2 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: center; }
+    align-content: center;
+    text-align: center; }
     main .trabajosRealizados article,
     main .trabajosRealizados2 article {
-      padding: 8% 15% 0 15%;
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      padding: 8% 15% 0 15%;
       font-size: 20px; }
       main .trabajosRealizados article strong,
       main .trabajosRealizados2 article strong {
@@ -237,7 +252,11 @@ main a {
       margin-top: 10%; }
   main .contacto_padre {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center; }
     main .contacto_padre .contacto_nieto1 {
       display: flex;
       flex-direction: row;
@@ -248,33 +267,36 @@ main a {
         display: flex;
         justify-content: space-evenly;
         background-color: #db9868;
-        border: outset 5px #db9868;
         border-radius: 20px;
         padding: 2%; }
         main .contacto_padre .contacto_nieto1 a div {
           display: flex;
           flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          text-align: center;
           color: white; }
-    main .contacto_padre img {
-      width: 50px;
-      height: 50px;
-      align-self: center; }
-    main .contacto_padre .contacto_hijo2 {
-      background-color: #fff0d1; }
-      main .contacto_padre .contacto_hijo2 strong {
-        display: flex;
-        justify-content: center;
-        font-size: 30px;
-        padding: 10% 0 15% 0; }
-      main .contacto_padre .contacto_hijo2 input {
-        width: 80%;
-        margin: auto; }
-      main .contacto_padre .contacto_hijo2 select {
-        width: 80%;
-        margin: auto; }
-      main .contacto_padre .contacto_hijo2 label {
-        display: flex;
-        justify-content: center; }
+        main .contacto_padre .contacto_nieto1 a img {
+          width: 50px;
+          height: 50px;
+          align-self: center; }
+  main .contacto_hijo2 {
+    background-color: #fff0d1; }
+    main .contacto_hijo2 strong {
+      display: flex;
+      justify-content: center;
+      font-size: 30px;
+      padding: 10% 0 15% 0; }
+    main .contacto_hijo2 input {
+      width: 80%;
+      margin: auto; }
+    main .contacto_hijo2 select {
+      width: 80%;
+      margin: auto; }
+    main .contacto_hijo2 label {
+      display: flex;
+      justify-content: center; }
   main .botonesFormulario {
     display: flex;
     justify-content: center; }
@@ -330,9 +352,11 @@ main a {
     font-size: 25px; }
   main .reseñas span a {
     font-size: 30px; }
-  main .ubicacionesTR, main .ubicacionesTR2 {
+  main .ubicacionesTR,
+  main .ubicacionesTR2 {
     padding: 0%; }
-    main .ubicacionesTR img, main .ubicacionesTR2 img {
+    main .ubicacionesTR img,
+    main .ubicacionesTR2 img {
       width: 5%;
       height: auto; }
   main .trabajosRealizados article {
