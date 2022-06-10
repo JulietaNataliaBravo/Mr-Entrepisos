@@ -6,3 +6,28 @@
     align-content: center;
     text-align: center;
 }
+
+@mixin flexrow{
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flexrowevenly {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@mixin flexjuscenter{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flexrowcentrado{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}

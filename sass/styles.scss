@@ -53,7 +53,6 @@ header {
 
     @media only screen and (min-width: $s) {
         .header__logo {
-            @extend .header__logo;
             width: 400px;
             height: 170px;
         }
@@ -87,9 +86,7 @@ header {
         }
 
         .header2 {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+            @include flexrowcentrado;
             justify-content: start;
             padding-top: 1%;
         }
@@ -105,9 +102,7 @@ header {
         }
 
         .header__secciones {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+            @include flexrowcentrado;
         }
 
         ul {
@@ -142,21 +137,27 @@ header {
     @media only screen and (min-width: $xl) {
 
         .header2 {
-            justify-content: start;
             gap: 4%;
             align-items: center;
-        }
 
-        ul {
-            padding: 0;
+            ul {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
 
-            li {
-                font-size: 200%;
-                margin-left: 25%;
+                li {
+                    font-size: 200%;
+                    margin: 0 5% 0 0;
+                    text-align: center;
+
+                    a {
+                        padding: 0 5% 0 5%;
+                    }
+                }
             }
         }
     }
-
 }
 
 main {
@@ -231,18 +232,17 @@ main {
 
         h1 {
             font-size: 275%;
-            display: flex;
-            justify-content: flex-end;
+            @include flexjuscenter;
             padding: 1%;
-            margin-right: 10%;
             color: $marronOscuro;
             text-align: center;
+            margin-left: 5%;
+            margin-right: 5%;
         }
 
         h2 {
             font-size: 40px;
-            display: flex;
-            justify-content: center;
+            @include flexjuscenter;
             background-color: $marronClaro;
             padding: 0 10% 0 10%;
             text-align: center;
@@ -251,12 +251,9 @@ main {
         //Trabajos realizados//
         .ubicacionesTR,
         .ubicacionesTR2 {
+            @include flexrowcentrado;
             font-size: 180%;
             color: $marronOscuro;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
             margin-bottom: 5%;
             padding-top: 10%;
 
@@ -274,6 +271,7 @@ main {
                 @include flexcolumncentrado;
                 padding: 8% 15% 0 15%;
                 font-size: 20px;
+                text-align: justify;
 
                 strong {
                     text-align: center;
@@ -288,8 +286,7 @@ main {
 
             div {
                 div {
-                    display: flex;
-                    justify-content: center;
+                    @include flexrowcentrado;
 
                     img {
                         width: 60%;
@@ -342,29 +339,24 @@ main {
                 }
 
                 #PRbtnEnviar {
-                    display: flex;
-                    justify-content: center;
+                    @include flexjuscenter;
                     margin-top: 10%;
                 }
             }
         }
 
         .contacto_padre {
-            @include flexcolumncentrado;
 
             .contacto_nieto1 {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
+                @include flexrowevenly;
                 background: linear-gradient(to top, $marronClaro2, white);
                 padding: 15% 0 15% 0;
 
                 a {
-                    display: flex;
-                    justify-content: space-evenly;
+                    @include flexrowevenly;
                     background-color: $marronMedio;
                     border-radius: 20px;
-                    border-color: map-get($map: coloresrrss, $key: instagram);border-width: 10px;
+                    border-width: 10px solid;
                     padding: 2%;
 
                     div {
@@ -382,13 +374,12 @@ main {
 
         }
 
-
         .contacto_hijo2 {
             background-color: $marronClaro2;
+            align-items: none;
 
             strong {
-                display: flex;
-                justify-content: center;
+                @include flexjuscenter;
                 font-size: 30px;
                 padding: 10% 0 15% 0;
             }
@@ -400,27 +391,23 @@ main {
 
             select {
                 width: 80%;
-
                 margin: auto;
             }
 
             label {
-                display: flex;
-                justify-content: center;
+                @include flexjuscenter;
             }
         }
 
 
         .botonesFormulario {
-            display: flex;
-            justify-content: center;
+            @include flexjuscenter;
 
             button {
                 margin: 10%;
             }
         }
     }
-
 
     @media only screen and (min-width: $s) {
 
@@ -535,12 +522,8 @@ main {
             }
         }
 
-        .trabajosRealizados {
-            article {
-                padding: 0 5% 0 5%;
-                font-size: 20px;
-            }
-
+        .trabajosRealizados,
+        .trabajosRealizados2 {
 
             div {
                 display: grid;
@@ -550,6 +533,30 @@ main {
                 justify-content: center;
                 padding: 5%;
 
+                .tr__imgs1,
+                .tr__imgs4v2 {
+                    grid-row: 1 / 3;
+                }
+
+                .tr__imgs3,
+                .tr__imgs2v2 {
+                    grid-column: 3 / 4;
+                    grid-row: 1 / 3;
+                }
+
+                .imgSA4 {
+                    grid-column: 1 / 3;
+                    grid-row: 2 / 4;
+                }
+
+                .imgSA1 {
+                    grid-column: 1 / 3;
+                    grid-row: 1 / 2;
+                }
+
+                .imgSA3 {
+                    grid-row: 1 / 3;
+                }
 
                 div {
                     padding: 0;
@@ -563,15 +570,27 @@ main {
                         padding: 0;
                     }
                 }
+            }
 
-                .tr__imgs1 {
-                    grid-row: 1 / 3;
+            article {
+                padding: 0 5% 0 5%;
+                font-size: 20px;
+
+                strong {
+                    padding-top: 5%;
                 }
 
-                .tr__imgs3 {
-                    grid-column: 3 / 4;
-                    grid-row: 1 / 3;
+                button {
+                    margin: 15% 0 10% 0;
                 }
+            }
+        }
+
+        .formularioPresupuesto {
+            padding: 2% 2% 2% 20%;
+
+            .form-control {
+                width: 400px;
             }
         }
     }
@@ -625,9 +644,29 @@ main {
             }
         }
 
+        .subtitulo {
+            padding: 3%;
+        }
+
+        .ubicacionesTR,
+        .ubicacionesTR2 {
+            margin-top: 5%;
+        }
+
+        .trabajosRealizados,
+        .trabajosRealizados2 {
+            flex-direction: row;
+
+            div {
+                padding: 0 5% 5% 5%;
+            }
+        }
+
+        .trabajosRealizados2 {
+            flex-direction: row-reverse;
+        }
 
     }
-
 
     @media only screen and (min-width: $xl) {
 
@@ -660,6 +699,56 @@ main {
 
                 .txtreseña2 {
                     margin-bottom: 10px;
+                }
+            }
+        }
+
+        h1 {
+            justify-content: end;
+        }
+
+        .trabajosRealizados,
+        .trabajosRealizados2 {
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .ubicacionesTR {
+            justify-content: start;
+            margin-left: 4%;
+
+            img {
+                width: 40px;
+            }
+        }
+
+        .ubicacionesTR2 {
+            justify-content: end;
+            margin-right: 4%;
+
+            img {
+                width: 40px;
+            }
+        }
+
+        .contacto_padre {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+
+            div {
+                width: 100%;
+            }
+
+            .contacto_hijo1 {
+                div {
+                    padding: 0;
+                    @include flexcolumncentrado;
+                    justify-content: space-between;
+                    
+                    a{
+                        width: 150px;
+                    }
                 }
             }
         }
