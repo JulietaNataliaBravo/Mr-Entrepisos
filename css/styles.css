@@ -13,6 +13,9 @@
 
 body {
   font-family: "Oswald"; }
+  @media only screen and (max-width: 319px) {
+    body {
+      display: none; } }
 
 header {
   background-color: #eed4c1; }
@@ -20,18 +23,27 @@ header {
     font-family: "Winter Soldier";
     list-style: none;
     display: flex; }
-  @media only screen and (min-width: 390px) {
-    header .container-fluid {
-      flex-wrap: nowrap !important; }
-    header .header__logo {
-      width: 270px;
-      height: 160px;
-      padding-top: 10px;
-      padding-bottom: 10px; }
+  @media only screen and (min-width: 320px) {
+    header nav {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center; }
+      header nav .container-fluid {
+        flex-wrap: nowrap !important;
+        width: auto !important;
+        padding: 0;
+        margin: 0; }
+      header nav .header__logo {
+        width: 220px;
+        height: 110px;
+        padding: 0;
+        margin: 0; }
     header .header2 {
       display: none; }
-    header .container-fluid {
-      width: auto !important; }
     header ul {
       align-items: center; }
       header ul li {
@@ -39,13 +51,13 @@ header {
         font-size: 200%;
         padding-bottom: 10%; } }
   @media only screen and (min-width: 480px) {
-    header .header__logo {
-      width: 400px;
-      height: 170px; }
+    header nav .header__logo {
+      width: 350px;
+      height: 140px; }
     header ul li {
       font-size: 210%; } }
   @media only screen and (min-width: 768px) {
-    header .header__logo {
+    header nav .header__logo {
       width: 450px;
       height: 180px;
       margin-top: 10px; }
@@ -63,36 +75,36 @@ header {
       text-align: center;
       justify-content: start;
       padding-top: 1%; }
-    header .header__logo {
-      margin: 0;
-      padding: 0; }
-      header .header__logo a {
-        width: 75%;
-        height: auto; }
-    header .header__secciones {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      text-align: center; }
-    header ul {
-      list-style: none;
-      margin: 0 0 0 3%;
-      padding: 0; }
-      header ul li {
-        font-size: 170%;
-        padding: 0 6% 0 6%;
+      header .header2 .header__logo {
+        margin: 0;
+        padding: 0; }
+        header .header2 .header__logo a {
+          width: 75%;
+          height: auto; }
+      header .header2 .header__secciones {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
         text-align: center; }
-        header ul li a {
-          text-decoration: none;
-          color: #452110; }
-      header ul li:hover {
-        background-color: #fff0d1;
-        transform: skewX(1) skewY(1);
-        border-radius: 20px; }
-        header ul li:hover a {
-          color: #452110; } }
+      header .header2 ul {
+        list-style: none;
+        margin: 0 0 0 3%;
+        padding: 0; }
+        header .header2 ul li {
+          font-size: 170%;
+          padding: 0 6% 0 6%;
+          text-align: center; }
+          header .header2 ul li a {
+            text-decoration: none;
+            color: #452110; }
+        header .header2 ul li:hover {
+          background-color: #fff0d1;
+          transform: skewX(1) skewY(1);
+          border-radius: 20px; }
+          header .header2 ul li:hover a {
+            color: #452110; } }
   @media only screen and (min-width: 1200px) {
     header .header2 {
       gap: 4%;
@@ -113,15 +125,14 @@ main a {
   text-decoration: none;
   color: white; }
 
-@media only screen and (min-width: 390px) {
+@media only screen and (min-width: 320px) {
   main .bannerPpal1,
   main .bannerPpal2,
   main .bannerPpal3 {
     width: 100%;
     height: 310px;
     border: outset 5px #db9868;
-    margin-top: 2%;
-    margin-bottom: 2%; }
+    margin-top: 2% 0 0 0; }
   main .calltoaction {
     background: linear-gradient(to bottom, #fff0d1, white); }
     main .calltoaction a {
@@ -167,6 +178,12 @@ main a {
         background-color: #452110;
         padding: 12px;
         border-radius: 10px; }
+        main .reseñas div span :hover {
+          background-color: #db9868;
+          padding: 12px;
+          border-radius: 10px;
+          color: #452110;
+          box-shadow: 0 0 0 0.25rem #eed4c1; }
   main h1 {
     font-size: 275%;
     display: flex;
@@ -181,8 +198,9 @@ main a {
     display: flex;
     justify-content: center;
     background-color: #eed4c1;
-    padding: 0 10% 0 10%;
-    text-align: center; }
+    padding: 5px 10% 5px 10%;
+    text-align: center;
+    margin: 0; }
   main .ubicacionesTR,
   main .ubicacionesTR2 {
     display: flex;
@@ -217,7 +235,8 @@ main a {
       text-align: center;
       padding: 8% 15% 0 15%;
       font-size: 20px;
-      text-align: justify; }
+      text-align: justify;
+      align-items: unset; }
       main .trabajosRealizados article strong,
       main .trabajosRealizados2 article strong {
         text-align: center;
@@ -225,7 +244,19 @@ main a {
         padding: 2%; }
       main .trabajosRealizados article button,
       main .trabajosRealizados2 article button {
-        margin: 15% 0 25% 0; }
+        margin: 15% 0 25% 0;
+        background-color: #452110;
+        border: #db9868; }
+      main .trabajosRealizados article button:focus,
+      main .trabajosRealizados2 article button:focus {
+        background-color: #452110;
+        border: #db9868;
+        box-shadow: 0 0 0 0.25rem #db9868; }
+      main .trabajosRealizados article button:hover,
+      main .trabajosRealizados2 article button:hover {
+        background-color: #db9868;
+        border: #db9868;
+        box-shadow: 0 0 0 0.25rem #eed4c1; }
     main .trabajosRealizados div div,
     main .trabajosRealizados2 div div {
       display: flex;
@@ -244,59 +275,84 @@ main a {
     font-size: 25px;
     padding: 10%;
     margin: 0; }
-  main #img_adicionales_padre {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start; }
-    main #img_adicionales_padre img {
-      width: 300px;
-      height: 200px;
-      margin-left: 3%; }
+  main #offcanvasBottom {
+    height: 50%; }
+    main #offcanvasBottom div button {
+      background-color: white; }
+    main #offcanvasBottom #img_adicionales_padre {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 3%; }
+      main #offcanvasBottom #img_adicionales_padre img {
+        margin: 0;
+        width: 100%;
+        height: 100%; }
   main .formularioPresupuesto {
     border-radius: 20px;
-    background: linear-gradient(to bottom, #db9868, #eed4c1, #db9868);
+    background: linear-gradient(to bottom, #eed4c1, #db9868, #eed4c1);
     margin-bottom: 10%;
     margin-top: 10%;
-    padding: 10%; }
+    padding: 10%;
+    color: #452110; }
     main .formularioPresupuesto legend {
       text-align: center;
       padding: 8% 0 8% 0; }
     main .formularioPresupuesto label {
       text-align: center; }
     main .formularioPresupuesto fieldset fieldset {
-      padding-top: 10%; }
+      padding: 10% 0 0 0; }
     main .formularioPresupuesto fieldset #PRbtnEnviar {
       display: flex;
       justify-content: center;
       margin-top: 10%; }
-  main .contacto_padre .contacto_nieto1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background: linear-gradient(to top, #fff0d1, white);
-    padding: 15% 0 15% 0; }
-    main .contacto_padre .contacto_nieto1 a {
+      main .formularioPresupuesto fieldset #PRbtnEnviar button {
+        background-color: #fff0d1;
+        border-color: #452110;
+        color: #452110; }
+      main .formularioPresupuesto fieldset #PRbtnEnviar :hover {
+        background-color: #452110;
+        border-color: #452110;
+        color: #eed4c1;
+        box-shadow: 0 0 0 0.25rem #db9868; }
+      main .formularioPresupuesto fieldset #PRbtnEnviar :focus {
+        box-shadow: 0 0 0 0.25rem #db9868; }
+  main .contacto_padre .contacto_hijo1 {
+    background: linear-gradient(to bottom, #fff0d1, #eed4c1); }
+    main .contacto_padre .contacto_hijo1 p {
+      background-color: #fff0d1;
+      margin: 0%;
+      text-align: center;
+      padding: 0 5% 0 5%;
+      color: #452110; }
+    main .contacto_padre .contacto_hijo1 .contacto_nieto1 {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
-      background-color: #db9868;
-      border-radius: 20px;
-      border-width: 10px solid;
-      padding: 2%; }
-      main .contacto_padre .contacto_nieto1 a div {
+      background: linear-gradient(to top, #fff0d1, #eed4c1);
+      padding: 15% 0 15% 0; }
+      main .contacto_padre .contacto_hijo1 .contacto_nieto1 a {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        text-align: center;
-        color: white; }
-      main .contacto_padre .contacto_nieto1 a img {
-        width: 50px;
-        height: 50px;
-        align-self: center; }
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #db9868;
+        border-radius: 20px;
+        border-width: 10px solid;
+        padding: 2%; }
+        main .contacto_padre .contacto_hijo1 .contacto_nieto1 a div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          text-align: center;
+          color: white; }
+        main .contacto_padre .contacto_hijo1 .contacto_nieto1 a img {
+          width: 50px;
+          height: 50px;
+          align-self: center; }
   main .contacto_hijo2 {
-    background-color: #fff0d1;
+    background: linear-gradient(to top, #eed4c1, #fff0d1);
     align-items: none; }
     main .contacto_hijo2 strong {
       display: flex;
@@ -316,7 +372,14 @@ main a {
     display: flex;
     justify-content: center; }
     main .botonesFormulario button {
-      margin: 10%; } }
+      margin: 10%; }
+    main .botonesFormulario .btn.btn-secondary {
+      border-color: #452110;
+      color: #452110;
+      background-color: white; }
+    main .botonesFormulario .btn.btn-primary {
+      background-color: #452110;
+      border-color: #452110; } }
 
 @media only screen and (min-width: 480px) {
   main .bannerPpal1,
@@ -339,6 +402,8 @@ main a {
   main .formularioPresupuesto label,
   main .formularioPresupuesto legend {
     font-size: 25px; }
+  main .contacto_padre .contacto_hijo1 p {
+    font-size: 24px; }
   main .contacto_padre .contacto_hijo1 span {
     font-size: 24px; }
   main .contacto_padre .contacto_hijo1 img {
@@ -417,18 +482,42 @@ main a {
         padding: 0; }
   main .trabajosRealizados article,
   main .trabajosRealizados2 article {
-    padding: 0 5% 0 5%;
-    font-size: 20px; }
+    padding: 0 12% 0 12%;
+    font-size: 20px;
+    align-items: center; }
     main .trabajosRealizados article strong,
     main .trabajosRealizados2 article strong {
       padding-top: 5%; }
     main .trabajosRealizados article button,
     main .trabajosRealizados2 article button {
-      margin: 15% 0 10% 0; }
+      margin: 10% 0 25% 0; }
+  main #offcanvasBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 3%;
+    height: 50%; }
+    main #offcanvasBottom div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center; }
+    main #offcanvasBottom #img_adicionales_padre img {
+      margin: 0;
+      width: 100%;
+      height: 100%; }
   main .formularioPresupuesto {
-    padding: 2% 2% 2% 20%; }
+    padding: 10%;
+    margin: 0;
+    border-radius: 0; }
     main .formularioPresupuesto .form-control {
-      width: 400px; } }
+      width: 400px; }
+    main .formularioPresupuesto fieldset fieldset {
+      padding: 0; }
+  main .contacto_hijo1 .contacto_nieto1 {
+    padding: 3% 0 3% 0; } }
 
 @media only screen and (min-width: 1024px) {
   main .calltoaction a {
@@ -458,18 +547,23 @@ main a {
         font-size: 25px;
         justify-items: center; }
   main .subtitulo {
-    padding: 3%; }
+    padding: 3% 7% 3% 7%; }
   main .ubicacionesTR,
   main .ubicacionesTR2 {
-    margin-top: 5%; }
+    margin: 2% 0 0 0; }
   main .trabajosRealizados,
   main .trabajosRealizados2 {
     flex-direction: row; }
     main .trabajosRealizados div,
     main .trabajosRealizados2 div {
-      padding: 0 5% 5% 5%; }
+      padding: 3% 8% 8% 8%; }
+    main .trabajosRealizados article,
+    main .trabajosRealizados2 article {
+      padding: 0 9% 0 9%; }
   main .trabajosRealizados2 {
-    flex-direction: row-reverse; } }
+    flex-direction: row-reverse; }
+  main .contacto_padre .contacto_hijo1 .contacto_nieto1 {
+    padding: 5% 0 5% 0; } }
 
 @media only screen and (min-width: 1200px) {
   main .bannerPpal1,
@@ -499,6 +593,23 @@ main a {
   main .trabajosRealizados2 {
     justify-content: space-between;
     width: 100%; }
+    main .trabajosRealizados #offcanvasBottom,
+    main .trabajosRealizados2 #offcanvasBottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      padding: 2%; }
+      main .trabajosRealizados #offcanvasBottom .offcanvas-header,
+      main .trabajosRealizados2 #offcanvasBottom .offcanvas-header {
+        display: flex;
+        flex-direction: row; }
+      main .trabajosRealizados #offcanvasBottom #img_adicionales_padre,
+      main .trabajosRealizados2 #offcanvasBottom #img_adicionales_padre {
+        gap: 1%;
+        width: 100%; }
   main .ubicacionesTR {
     justify-content: start;
     margin-left: 4%; }
@@ -509,23 +620,108 @@ main a {
     margin-right: 4%; }
     main .ubicacionesTR2 img {
       width: 40px; }
+  main .formularioPresupuesto {
+    margin: 0;
+    border-radius: 0;
+    padding: 2%; }
+    main .formularioPresupuesto label {
+      text-align: start;
+      padding-left: 45px; }
+    main .formularioPresupuesto .form-control {
+      width: 90%; }
   main .contacto_padre {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center; }
+    justify-content: center;
+    height: 1100px; }
     main .contacto_padre div {
       width: 100%; }
-    main .contacto_padre .contacto_hijo1 div {
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      text-align: center;
-      justify-content: space-between; }
-      main .contacto_padre .contacto_hijo1 div a {
-        width: 150px; } }
+    main .contacto_padre .contacto_hijo1 {
+      background: linear-gradient(to bottom, #fff0d1, #fff0d1, #fff0d1, #eed4c1); }
+      main .contacto_padre .contacto_hijo1 p {
+        padding: 0 70px 0 70px;
+        font-size: 36px;
+        text-align: center;
+        white-space: pre-line; }
+      main .contacto_padre .contacto_hijo1 div {
+        padding: 0; }
+        main .contacto_padre .contacto_hijo1 div a {
+          margin: 10.5% 0 11% 0;
+          width: 150px;
+          border: solid 5px #eed4c1; }
+          main .contacto_padre .contacto_hijo1 div a :hover {
+            background-color: #fff0d1;
+            color: #452110; }
+        main .contacto_padre .contacto_hijo1 div :hover {
+          background-color: #fff0d1;
+          color: #452110;
+          border-color: #452110; } }
 
 footer {
-  background-color: #eed4c1; }
+  background-color: #eed4c1;
+  align-items: center; }
+  @media only screen and (min-width: 320px) {
+    footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10%; }
+      footer span {
+        font-size: 14px;
+        width: 100px; }
+      footer .siguenospadre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center; }
+        footer .siguenospadre p {
+          margin: 0; }
+        footer .siguenospadre div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          text-align: center;
+          display: flex; }
+          footer .siguenospadre div a {
+            margin: 50%; }
+            footer .siguenospadre div a img {
+              width: 40px;
+              height: 40px; } }
+  @media only screen and (min-width: 480px) {
+    footer {
+      padding: 6%; }
+      footer span {
+        font-size: 18px;
+        width: 180px; }
+      footer .siguenospadre p {
+        font-size: 24px; }
+      footer .siguenospadre div a {
+        margin-bottom: 10px; }
+        footer .siguenospadre div a img {
+          width: 50px;
+          height: 50px; } }
+  @media only screen and (min-width: 768px) {
+    footer {
+      padding: 3% 12% 3% 6%; }
+      footer span {
+        font-size: 18px;
+        width: 50%; }
+      footer .siguenospadre p {
+        font-size: 24px; }
+      footer .siguenospadre div {
+        display: flex;
+        flex-direction: row;
+        gap: 20%; }
+        footer .siguenospadre div a {
+          margin: 0; }
+          footer .siguenospadre div a img {
+            width: 50px;
+            height: 50px; } }
+  @media only screen and (min-width: 1200px) {
+    footer {
+      padding: 1% 3% 1% 3%;
+      align-items: center; } }

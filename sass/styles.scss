@@ -3,10 +3,13 @@
 @import "mediaqueries";
 @import "mixins";
 
-$coloresrrss:(facebook:#55acee, instagram:#E1306C, whatsapp: #25D366);
-
 body {
     font-family: "Oswald";
+
+    @media only screen and (max-width: $xxs) {
+        display: none;
+
+    }
 }
 
 header {
@@ -20,23 +23,29 @@ header {
 
     @media only screen and (min-width: $xs) {
 
-        .container-fluid {
-            flex-wrap: nowrap !important;
+        nav {
+            width: 100%;
+
+            .container-fluid {
+                flex-wrap: nowrap !important;
+                width: auto !important;
+                padding: 0;
+                margin: 0;
+            }
+
+            .header__logo {
+                width: 220px;
+                height: 110px;
+                padding: 0;
+                margin: 0;
+            }
+
+            @include flexcolumncentrado;
         }
 
-        .header__logo {
-            width: 270px;
-            height: 160px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
 
         .header2 {
             display: none;
-        }
-
-        .container-fluid {
-            width: auto !important;
         }
 
         ul {
@@ -52,9 +61,11 @@ header {
     }
 
     @media only screen and (min-width: $s) {
-        .header__logo {
-            width: 400px;
-            height: 170px;
+        nav {
+            .header__logo {
+                width: 350px;
+                height: 140px;
+            }
         }
 
         ul {
@@ -65,10 +76,13 @@ header {
     }
 
     @media only screen and (min-width: $m) {
-        .header__logo {
-            width: 450px;
-            height: 180px;
-            margin-top: 10px;
+
+        nav {
+            .header__logo {
+                width: 450px;
+                height: 180px;
+                margin-top: 10px;
+            }
         }
 
         ul {
@@ -89,49 +103,48 @@ header {
             @include flexrowcentrado;
             justify-content: start;
             padding-top: 1%;
-        }
 
-        .header__logo {
-            margin: 0;
-            padding: 0;
-
-            a {
-                width: 75%;
-                height: auto;
-            }
-        }
-
-        .header__secciones {
-            @include flexrowcentrado;
-        }
-
-        ul {
-            list-style: none;
-            margin: 0 0 0 3%;
-            padding: 0;
-
-            li {
-                font-size: 170%;
-                padding: 0 6% 0 6%;
-                text-align: center;
+            .header__logo {
+                margin: 0;
+                padding: 0;
 
                 a {
-                    text-decoration: none;
-                    color: $marronOscuro;
+                    width: 75%;
+                    height: auto;
                 }
             }
 
-            li:hover {
-                background-color: $marronClaro2;
-                transform: skewX(1) skewY(1);
-                border-radius: 20px;
+            .header__secciones {
+                @include flexrowcentrado;
+            }
 
-                a {
-                    color: $marronOscuro;
+            ul {
+                list-style: none;
+                margin: 0 0 0 3%;
+                padding: 0;
+
+                li {
+                    font-size: 170%;
+                    padding: 0 6% 0 6%;
+                    text-align: center;
+
+                    a {
+                        text-decoration: none;
+                        color: $marronOscuro;
+                    }
+                }
+
+                li:hover {
+                    background-color: $marronClaro2;
+                    transform: skewX(1) skewY(1);
+                    border-radius: 20px;
+
+                    a {
+                        color: $marronOscuro;
+                    }
                 }
             }
         }
-
     }
 
     @media only screen and (min-width: $xl) {
@@ -175,8 +188,7 @@ main {
             width: 100%;
             height: 310px;
             border: $bordeTR;
-            margin-top: 2%;
-            margin-bottom: 2%;
+            margin-top: 2% 0 0 0;
         }
 
         .calltoaction {
@@ -224,8 +236,15 @@ main {
                     background-color: $marronOscuro;
                     padding: 12px;
                     border-radius: 10px;
-                }
 
+                    :hover {
+                        background-color: $marronMedio;
+                        padding: 12px;
+                        border-radius: 10px;
+                        color: $marronOscuro;
+                        box-shadow: 0 0 0 0.25rem $marronClaro;
+                    }
+                }
             }
 
         }
@@ -244,8 +263,9 @@ main {
             font-size: 40px;
             @include flexjuscenter;
             background-color: $marronClaro;
-            padding: 0 10% 0 10%;
+            padding: 5px 10% 5px 10%;
             text-align: center;
+            margin: 0;
         }
 
         //Trabajos realizados//
@@ -272,6 +292,7 @@ main {
                 padding: 8% 15% 0 15%;
                 font-size: 20px;
                 text-align: justify;
+                align-items: unset;
 
                 strong {
                     text-align: center;
@@ -281,6 +302,20 @@ main {
 
                 button {
                     margin: 15% 0 25% 0;
+                    background-color: $marronOscuro;
+                    border: $marronMedio;
+                }
+
+                button:focus {
+                    background-color: $marronOscuro;
+                    border: $marronMedio;
+                    box-shadow: 0 0 0 0.25rem $marronMedio;
+                }
+
+                button:hover {
+                    background-color: $marronMedio;
+                    border: $marronMedio;
+                    box-shadow: 0 0 0 0.25rem $marronClaro;
                 }
             }
 
@@ -304,24 +339,36 @@ main {
             margin: 0;
         }
 
-        #img_adicionales_padre {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
+        #offcanvasBottom {
+            height: 50%;
 
-            img {
-                width: 300px;
-                height: 200px;
-                margin-left: 3%;
+            div {
+                button {
+                    background-color: white;
+                }
+            }
+
+            #img_adicionales_padre {
+                @include flexrow;
+                justify-content: flex-start;
+                gap: 3%;
+
+                img {
+                    margin: 0;
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
 
         .formularioPresupuesto {
             border-radius: 20px;
-            background: linear-gradient(to bottom, $marronMedio, $marronClaro, $marronMedio);
+            background: linear-gradient(to bottom, $marronClaro, $marronMedio, $marronClaro);
             margin-bottom: 10%;
             margin-top: 10%;
             padding: 10%;
+            color: $marronOscuro;
+
 
             legend {
                 text-align: center;
@@ -335,47 +382,75 @@ main {
             fieldset {
 
                 fieldset {
-                    padding-top: 10%;
+                    padding: 10% 0 0 0;
                 }
 
                 #PRbtnEnviar {
                     @include flexjuscenter;
                     margin-top: 10%;
+
+                    button {
+                        background-color: $marronClaro2;
+                        border-color: $marronOscuro;
+                        color: $marronOscuro;
+                    }
+
+                    :hover {
+                        background-color: $marronOscuro;
+                        border-color: $marronOscuro;
+                        color: $marronClaro;
+                        box-shadow: 0 0 0 0.25rem $marronMedio;
+                    }
+
+                    :focus {
+                        box-shadow: 0 0 0 0.25rem $marronMedio;
+                    }
                 }
             }
+
         }
 
         .contacto_padre {
+            .contacto_hijo1 {
+                background: linear-gradient(to bottom, $marronClaro2, $marronClaro);
 
-            .contacto_nieto1 {
-                @include flexrowevenly;
-                background: linear-gradient(to top, $marronClaro2, white);
-                padding: 15% 0 15% 0;
+                p {
+                    background-color: $marronClaro2;
+                    margin: 0%;
+                    text-align: center;
+                    padding: 0 5% 0 5%;
+                    color: $marronOscuro;
+                }
 
-                a {
+                .contacto_nieto1 {
                     @include flexrowevenly;
-                    background-color: $marronMedio;
-                    border-radius: 20px;
-                    border-width: 10px solid;
-                    padding: 2%;
+                    background: linear-gradient(to top, $marronClaro2, $marronClaro);
+                    padding: 15% 0 15% 0;
 
-                    div {
-                        @include flexcolumncentrado;
-                        color: $blanco;
-                    }
+                    a {
+                        @include flexrowevenly;
+                        background-color: $marronMedio;
+                        border-radius: 20px;
+                        border-width: 10px solid;
+                        padding: 2%;
 
-                    img {
-                        width: 50px;
-                        height: 50px;
-                        align-self: center;
+                        div {
+                            @include flexcolumncentrado;
+                            color: $blanco;
+                        }
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                            align-self: center;
+                        }
                     }
                 }
             }
-
         }
 
         .contacto_hijo2 {
-            background-color: $marronClaro2;
+            background: linear-gradient(to top, $marronClaro, $marronClaro2);
             align-items: none;
 
             strong {
@@ -399,13 +474,24 @@ main {
             }
         }
 
-
         .botonesFormulario {
             @include flexjuscenter;
 
             button {
                 margin: 10%;
             }
+
+            .btn.btn-secondary {
+                border-color: $marronOscuro;
+                color: $marronOscuro;
+                background-color: $blanco;
+            }
+
+            .btn.btn-primary {
+                background-color: $marronOscuro;
+                border-color: $marronOscuro;
+            }
+
         }
     }
 
@@ -455,6 +541,10 @@ main {
 
         .contacto_padre {
             .contacto_hijo1 {
+                p {
+                    font-size: 24px;
+                }
+
                 span {
                     font-size: 24px;
                 }
@@ -573,26 +663,61 @@ main {
             }
 
             article {
-                padding: 0 5% 0 5%;
+                padding: 0 12% 0 12%;
                 font-size: 20px;
+                align-items: center;
 
                 strong {
                     padding-top: 5%;
                 }
 
                 button {
-                    margin: 15% 0 10% 0;
+                    margin: 10% 0 25% 0;
+                }
+            }
+        }
+
+        #offcanvasBottom {
+            @include flexrow;
+            justify-content: flex-start;
+            gap: 3%;
+            height: 50%;
+
+            div {
+                @include flexcolumncentrado;
+            }
+
+            #img_adicionales_padre {
+                img {
+                    margin: 0;
+                    width: 100%;
+                    height: 100%;
                 }
             }
         }
 
         .formularioPresupuesto {
-            padding: 2% 2% 2% 20%;
+            padding: 10%;
+            margin: 0;
+            border-radius: 0;
 
             .form-control {
                 width: 400px;
             }
+
+            fieldset {
+                fieldset {
+                    padding: 0;
+                }
+            }
         }
+
+        .contacto_hijo1 {
+            .contacto_nieto1 {
+                padding: 3% 0 3% 0;
+            }
+        }
+
     }
 
     @media only screen and (min-width: $l) {
@@ -645,12 +770,12 @@ main {
         }
 
         .subtitulo {
-            padding: 3%;
+            padding: 3% 7% 3% 7%;
         }
 
         .ubicacionesTR,
         .ubicacionesTR2 {
-            margin-top: 5%;
+            margin: 2% 0 0 0;
         }
 
         .trabajosRealizados,
@@ -658,12 +783,24 @@ main {
             flex-direction: row;
 
             div {
-                padding: 0 5% 5% 5%;
+                padding: 3% 8% 8% 8%;
+            }
+
+            article {
+                padding: 0 9% 0 9%;
             }
         }
 
         .trabajosRealizados2 {
             flex-direction: row-reverse;
+        }
+
+        .contacto_padre{
+            .contacto_hijo1{
+                .contacto_nieto1{
+                    padding: 5% 0 5% 0;
+                }
+            }
         }
 
     }
@@ -711,6 +848,20 @@ main {
         .trabajosRealizados2 {
             justify-content: space-between;
             width: 100%;
+
+            #offcanvasBottom {
+                @include flexcolumncentrado;
+                padding: 2%;
+
+                .offcanvas-header {
+                    @include flexrow;
+                }
+
+                #img_adicionales_padre {
+                    gap: 1%;
+                    width: 100%;
+                }
+            }
         }
 
         .ubicacionesTR {
@@ -731,23 +882,59 @@ main {
             }
         }
 
+        .formularioPresupuesto {
+            margin: 0;
+            border-radius: 0;
+            padding: 2%;
+
+            label {
+                text-align: start;
+                padding-left: 45px;
+            }
+
+            .form-control {
+                width: 90%;
+            }
+        }
+
         .contacto_padre {
             display: flex;
             flex-direction: row-reverse;
             justify-content: center;
+            height: 1100px;
 
             div {
                 width: 100%;
             }
 
             .contacto_hijo1 {
+                background: linear-gradient(to bottom, $marronClaro2, $marronClaro2, $marronClaro2, $marronClaro);
+
+                p{
+                    padding: 0 70px 0 70px;
+                    font-size: 36px;
+                    text-align: center;
+                    white-space: pre-line;
+                }
+
                 div {
                     padding: 0;
-                    @include flexcolumncentrado;
-                    justify-content: space-between;
-                    
-                    a{
+
+                    a {
+                        margin: 10.5% 0 11% 0;
                         width: 150px;
+                        border: solid 5px $marronClaro;
+
+                        :hover {
+                            background-color: $marronClaro2;
+                            color: $marronOscuro;
+                        }
+                    }
+
+                    :hover {
+                        background-color: $marronClaro2;
+                        color: $marronOscuro;
+                        border-color: $marronOscuro;
                     }
                 }
             }
@@ -757,4 +944,92 @@ main {
 
 footer {
     background-color: $marronClaro;
+    align-items: center;
+
+    @media only screen and (min-width: $xs) {
+        @include flexrow;
+        justify-content: space-between;
+        padding: 10%;
+
+        span {
+            font-size: 14px;
+            width: 100px;
+        }
+
+        .siguenospadre {
+            @include flexcolumncentrado;
+
+            p {
+                margin: 0;
+            }
+
+            div {
+                @include flexcolumncentrado;
+                display: flex;
+                a {
+                    margin: 50%;
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: $s) {
+        span{
+            font-size: 18px;
+            width: 180px;
+        }
+
+        padding: 6%;
+
+        .siguenospadre{
+            p{
+                font-size: 24px;
+            }
+            div{
+                a{
+                    margin-bottom: 10px;
+                    img{
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: $m){
+        span{
+            font-size: 18px;
+            width: 50%;
+        }
+    
+        padding: 3% 12% 3% 6%;
+    
+        .siguenospadre{
+            p{
+                font-size: 24px;
+            }
+            div{
+                @include flexrow;
+                gap: 20%;
+                a{
+                    margin: 0;
+                    img{
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    @media only screen and (min-width: $xl) {
+        padding: 1% 3% 1% 3%;
+        align-items: center;
+    }
 }
